@@ -1,0 +1,39 @@
+package br.edu.senaisp.exercicios;
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+
+		int anos, meses, dias, totalDias;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Insira os seus anos: ");
+		anos = sc.nextInt();
+		
+		System.out.print("Insira os seus meses: ");
+		meses = sc.nextInt();
+		
+		System.out.print("Insira os seus dias: ");
+		dias = sc.nextInt();
+		sc.close();
+	
+		
+		
+		while (anos != 0 && meses != 0 ) {
+			anos = anos * 365;
+			meses = meses * 30;
+		}
+		
+		totalDias = (anos + meses + dias);
+		
+		System.out.println("A sua idade representada em dias é de: " + totalDias);
+		
+
+	}
+
+}
+//Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
+//mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30.
+//(Ex: 3 anos, 2 meses e 15 dias = 1170 dias.)

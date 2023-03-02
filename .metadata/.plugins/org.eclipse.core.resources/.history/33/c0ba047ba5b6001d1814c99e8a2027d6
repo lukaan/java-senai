@@ -1,0 +1,28 @@
+package br.edu.senaisp.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio40 {
+
+	public static void main(String[] args) {
+
+		int numerador, denominador;
+		double resultado; // nao sei se é quociente 
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Digite o numerador da fracao: ");
+		numerador = sc.nextInt();
+		
+		System.out.println("Digite o denominador da fracao: ");
+		denominador = sc.nextInt();
+		
+		sc.close();
+		
+		resultado = numerador/denominador;
+		
+		System.out.println("Resultado: " + resultado);
+
+	}
+
+}
